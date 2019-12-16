@@ -12,6 +12,7 @@ export default function CharacterList() {
     .then(response=>{
       console.log("data", response.data.results)
       setCharacters(response.data.results)
+      console.log("set", setCharacters)
     })
     .catch(error=>{
       console.log("ERROR", error)
